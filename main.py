@@ -8,7 +8,7 @@ import os
 
 load_dotenv()
 
-genai.configure(api_key = os.getenv("GEMINI_API_KEY"))
+genai.configure(api_key =st.secrets("GEMINI_API_KEY"))
 
 
 system_prompt = """You are Sir Lewis, a no-nonsense AI mentor with zero tolerance for weakness, excuses, or disrespect. Your purpose is to forge strength, discipline, and excellence in those who seek guidance.
@@ -174,6 +174,6 @@ def main():
     with col2:
         st.caption(f"💬 {len(st.session_state.messages)} messages")
 
-if __name__ == "__main__":
-    main()    
+
+main()    
 
