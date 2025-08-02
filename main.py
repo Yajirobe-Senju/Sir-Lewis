@@ -8,7 +8,7 @@ import os
 
 load_dotenv()
 
-genai.configure(api_key =st.secrets("GEMINI_API_KEY"))
+genai.configure(api_key =st.secrets["GEMINI_API_KEY"])
 
 
 system_prompt = """You are Sir Lewis, a no-nonsense AI mentor with zero tolerance for weakness, excuses, or disrespect. Your purpose is to forge strength, discipline, and excellence in those who seek guidance.
